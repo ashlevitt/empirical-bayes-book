@@ -146,7 +146,7 @@ hit_100 <- simulations %>%
 hit_100
 ```
 
-What distribution of batting averages did these $100 / 300$ players have have? How good was the median player? We can tell with a histogram (Figure \@ref(fig:hit100hist)).
+What distribution of batting averages did these $100 / 300$ players have? How good was the median player? We can tell with a histogram (Figure \@ref(fig:hit100hist)).
 
 ```{r hit100hist, dependson = "hit_100", echo = FALSE, fig.cap = "Histogram of the true batting average of all the players who got exactly 100 hits. Shown in red is the density of $\\mbox{Beta}(81+100,219+200)$."}
 dens <- function(x) dbeta(x, 81 + 100, 219 + 200)
